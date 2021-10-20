@@ -1,0 +1,26 @@
+.page-header {background-color: #FFFFFF;
+
+}
+.list {
+  list-style: none;
+}
+.logo {
+  color: #2196F3;
+}
+.site-nav  .link  {color: #212121;}
+.site-nav .link-current {color: #2196F3;
+}
+
+.auth-nav  .link  {color: #212121;}
+.auth-nav .link-current {color: #2196F3;
+}
+
+
+.work-title {background-color: #2F303A;}
+
+.option {background-color: #E5E5E5;
+}
+.option-first {color: #212121;}
+.option-second { color: #757575;}
+
+.work-final {color: #FFFFFF;}
