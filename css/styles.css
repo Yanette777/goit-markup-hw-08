@@ -1,0 +1,100 @@
+.root {
+  --primary-text-color: #FFFFFF;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+}
+
+.page {
+  background-color:#E5E5E5;
+  color: var(--title-text-color);
+}
+.page-header {background-color: #FFFFFF;
+
+}
+.list {
+  list-style: none;
+}
+.logo {
+  color:#2196F3;
+}
+.site-nav  .link  { color: #2196F3;
+}
+.site-nav .link-current {color: #2196F3;
+}
+
+.auth-nav  .link  {color: var(--title-text-color)}
+.auth-nav .link-current {color: #2196F3;
+}
+
+.work-title {background-color:  #2F303A;
+color: white;
+}
+.button {background-color: #2196F3;
+  color: var(--primary-text-color);
+}
+
+
+.features {background-color: #E5E5E5;}
+.features-title-list{ list-style: none;}
+.features-title {color: var(--title-text-color)}
+
+.feauters-idea {color: #757575;}
+.work{background-color: #F5F4FA;}
+
+.work-title {background-color: #2F303A;}
+
+.option {background-color: #E5E5E5;
+}
+.option-first {color: var(--title-text-color)}
+.option-second { color: #757575;}
+
+.work-final {color: var(--primary-text-color)}
+
+
+/* Styles for Portfolio folder */
+.page-header {background-color: var(--primary-text-color);
+
+}
+.list {
+  list-style: none;
+}
+.logo {
+  color: #2196F3;
+}
+.site-nav  .link  {color: var(--title-text-color)}
+.site-nav .link-current {color: #2196F3;
+}
+
+.auth-nav  .link  {color: var(--title-text-color)}
+.auth-nav .link-current {color:#2196F3;
+}
+.main-part{
+  background-color: #FFFFFF;
+}
+.main-section{list-style: none;
+
+}
+.button{background-color: #2196F3;
+  color: var(--primary-text-color);
+}
+.other-buttons{background-color: #F5F4FA;
+color: var(--title-text-color);
+}
+.feauters-main{
+  color: var(--title-text-color);
+}
+.feauters-main-list{list-style: none;
+
+}
+.varieties{
+  color: #757575;
+}
+
+.work-title {background-color: #2F303A;}
+
+.option {background-color: #E5E5E5;
+}
+.option-first {color: var(--title-text-color)}
+.option-second { color: #757575;}
+
+.work-final {color: var(--primary-text-color)}
