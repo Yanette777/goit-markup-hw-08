@@ -7,6 +7,7 @@
 .page {
   background-color:#E5E5E5;
   color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
 }
 .page-header {background-color: #FFFFFF;
 
@@ -14,87 +15,182 @@
 .list {
   list-style: none;
 }
-.logo {
-  color:#2196F3;
-}
-.site-nav  .link  { color: #2196F3;
-}
-.site-nav .link-current {color: #2196F3;
+.logo :hover {
+  color:var(--title-text-color)
+  font-family: Raleway;
+
+font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
+/* identical to box height */
+letter-spacing: 0.03em;
 }
 
-.auth-nav  .link  {color: var(--title-text-color)}
+.site-nav  .link  { color: var(--title-text-color);
+  
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.site-nav .link-current {color: #2196F3;
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.auth-nav  .link  {color: var(--title-text-color)
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;}
 .auth-nav .link-current {color: #2196F3;
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 
 .work-title {background-color:  #2F303A;
-color: white;
-}
-.button {background-color: #2196F3;
-  color: var(--primary-text-color);
-}
 
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+/* or 136% */
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.button {background-color:var(--accent-color);
+  color: var(--primary-text-color);
+  font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+/* identical to box height, or 187% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+}
 
 .features {background-color: #E5E5E5;}
 .features-title-list{ list-style: none;}
-.features-title {color: var(--title-text-color)}
+.features-title {color: var(--title-text-color)
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;}
 
-.feauters-idea {color: #757575;}
+.feauters-idea {color: #757575;
+  font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+letter-spacing: 0.03em;
+}
 .work{background-color: #F5F4FA;}
 
 .work-title {background-color: #2F303A;}
 
 .option {background-color: #E5E5E5;
 }
-.option-first {color: var(--title-text-color)}
-.option-second { color: #757575;}
+.option-first-main {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.option-first {color: var(--title-text-color)
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;}
 
-.work-final {color: var(--primary-text-color)}
 
+.option-second {
+  font-size: 16px;
+line-height: 1.18;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
 
+.work-final {color: var(--accent-color);
+  font-family: Raleway;
+  
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;}
+
+.work-final-end {
+ 
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+color: #FFFFFF;
+  }
+.work-final-last{
+  color: rgba(255, 255, 255, 0.6);
+
+font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+letter-spacing: 0.03em;
+}
+  
 /* Styles for Portfolio folder */
-.page-header {background-color: var(--primary-text-color);
 
-}
-.list {
-  list-style: none;
-}
-.logo {
-  color: #2196F3;
-}
-.site-nav  .link  {color: var(--title-text-color)}
-.site-nav .link-current {color: #2196F3;
-}
-
-.auth-nav  .link  {color: var(--title-text-color)}
-.auth-nav .link-current {color:#2196F3;
-}
 .main-part{
   background-color: #FFFFFF;
 }
-.main-section{list-style: none;
-
+.main-section{ list-style: none;
 }
 .button{background-color: #2196F3;
+  
   color: var(--primary-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
 }
-.other-buttons{background-color: #F5F4FA;
+.button-second {background-color: #F5F4FA;
 color: var(--title-text-color);
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
 }
 .feauters-main{
   color: var(--title-text-color);
+  font-weight: bold;
+font-size: 18px;
+line-height: 2;
+/* identical to box height, or 200% */
+letter-spacing: 0.06em;
 }
+.portfolio-list { list-style: none;}
 .feauters-main-list{list-style: none;
 
 }
 .varieties{
   color: #757575;
+  font-size: 16px;
+line-height: 1.87;
+/* identical to box height, or 187% */
+letter-spacing: 0.03em;
 }
-
-.work-title {background-color: #2F303A;}
-
-.option {background-color: #E5E5E5;
-}
-.option-first {color: var(--title-text-color)}
-.option-second { color: #757575;}
-
-.work-final {color: var(--primary-text-color)}
