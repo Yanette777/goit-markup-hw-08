@@ -8,50 +8,79 @@
   background-color:#E5E5E5;
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
+  text-decoration: none;
 }
 .page-header {background-color: #FFFFFF;
+  
 
 }
 .list {
   list-style: none;
 }
-.logo :hover {
-  color:var(--title-text-color)
+.logo {
+  color: #2196F3;
   font-family: Raleway;
-
 font-weight: bold;
 font-size: 26px;
 line-height: 1.19;
 /* identical to box height */
 letter-spacing: 0.03em;
+text-decoration: none;
 }
 
-.site-nav  .link  { color: var(--title-text-color);
-  
+.site-nav  .link  { text-decoration: none;
+  color: var(--title-text-color);
+
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
-.site-nav .link-current {color: #2196F3;
+
+.site-nav .link-current :hover{cursor: pointer;
+color:#2196F3; }
+
+.site-nav .link-current :focus{color: #2196F3;}
+
+.site-nav .link-current :active{
+  color: #2196F3;
+}
+.site-nav .link-current {
+  text-decoration: none;
+  color: #2196F3;
   font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-}
+} 
 
-.auth-nav  .link  {color: var(--title-text-color)
+.auth-nav  .link  {
+  color: var(--title-text-color);
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;}
-.auth-nav .link-current {color: #2196F3;
-  font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-}
+  letter-spacing: 0.02em;
+} 
 
+.auth-nav .link-current  :hover {cursor: pointer;
+ color: #2196F3;}
+
+ .auth-nav .link-current  :focus{
+color: #2196F3;
+ }
+ .auth-nav .link-current :active{
+   color: #2196F3;
+ }
+ .auth-nav .link-current {
+   color: #2196F3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ }
+ 
 .work-title {background-color:  #2F303A;
 
 font-weight: 900;
@@ -78,7 +107,7 @@ letter-spacing: 0.06em;
 
 .features {background-color: #E5E5E5;}
 .features-title-list{ list-style: none;}
-.features-title {color: var(--title-text-color)
+.features-title {color: var(--title-text-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -105,7 +134,7 @@ letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.option-first {color: var(--title-text-color)
+.option-first {color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -122,7 +151,8 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.work-final {color: var(--accent-color);
+.work-final {color: #2196F3;
+  text-decoration: none;
   font-family: Raleway;
   
   font-weight: bold;
@@ -132,7 +162,7 @@ color: #757575;
   letter-spacing: 0.03em;}
 
 .work-final-end {
- 
+ text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -141,7 +171,7 @@ color: #FFFFFF;
   }
 .work-final-last{
   color: rgba(255, 255, 255, 0.6);
-
+text-decoration: none;
 font-size: 14px;
 line-height: 1.71;
 /* or 171% */
@@ -155,9 +185,15 @@ letter-spacing: 0.03em;
 }
 .main-section{ list-style: none;
 }
-.button{background-color: #2196F3;
-  
+.button :hover{
+  background-color: #2196F3;}
+  .button  :focus{background-color: #2196F3;}
+  .button :active{
+background-color: #2196F3;
+  }
+  .button {
   color: var(--primary-text-color);
+  background-color: #2196F3;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
