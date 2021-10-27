@@ -71,7 +71,8 @@ letter-spacing: 0.02em;
   line-height: 1.14;
   letter-spacing: 0.02em;
  }
- .auth-nav-list  .link:hover{cursor: pointer;
+ .auth-nav-list  .link:hover,
+ .auth-nav-list .link:focus{
   color: #2196F3;}
  
 .work-title {background-color:  #2F303A;
