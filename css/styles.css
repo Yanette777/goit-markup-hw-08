@@ -56,7 +56,7 @@ letter-spacing: 0.02em;
  letter-spacing: 0.02em;
  }
 .site-nav-list  .link-active:hover,
-.site-nav-list  .link-active:active{
+.site-nav-list  .link-active:focus{
   color: var(--brand-color);
 }
 
@@ -73,7 +73,6 @@ letter-spacing: 0.02em;
   .site-nav-list .link:focus {
     color: var(--brand-color);
   }
-
 
 .auth-nav-list  .link-current  {
   color: #757575;
