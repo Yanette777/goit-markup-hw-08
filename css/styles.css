@@ -37,7 +37,7 @@ text-decoration: none;
   text-decoration: none;
   list-style: none;
 }
-.site-nav-list  .link-current  {
+.site-nav-list .line-current  {
  text-decoration: none;
  font-style: normal;
 color: var(--title-text-color);
@@ -46,21 +46,21 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
-.site-nav-list  .link-active{
+.site-nav-list  .line-active{
   text-decoration: none;
   font-style: normal;
- color: var(--title-text-color);
+ color: var(--brand-color);
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
  }
-.site-nav-list  .link-active:hover,
-.site-nav-list  .link-active:focus{
+.site-nav-list  .line-active:hover,
+.site-nav-list  .line-active:focus{
   color: var(--brand-color);
 }
 
-.site-nav-list  .link{ 
+.link{ 
   color: var(--title-text-color);
   font-style: normal;
   text-decoration: none;
@@ -69,12 +69,13 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
-.site-nav-list .link:hover,
-  .site-nav-list .link:focus {
+.link:hover {cursor: pointer;
+  color: var(--brand-color);}
+   .link:focus {
     color: var(--brand-color);
   }
 
-.auth-nav-list  .link-current  {
+  .auth-nav-list  .line-current  {
   color: #757575;
   font-style: normal;
   text-decoration: none;
@@ -92,9 +93,11 @@ letter-spacing: 0.02em;
   line-height: 1.14;
   letter-spacing: 0.02em;
  }
- .auth-nav-list  .link:hover,
+ .auth-nav-list  .link:hover{cursor: pointer;
+  color: var(--brand-color);
+ }
  .auth-nav-list .link:focus{
-  color: var(--brand-color)}
+  color: var(--brand-color);}
  
 .work-title {background-color:  #2F303A;
 font-weight: 900;
@@ -116,6 +119,7 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .features {background-color: #E5E5E5;}
@@ -200,6 +204,13 @@ letter-spacing: 0.03em;
 }
   
 /* Styles for Portfolio folder */
+.page-style {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  background-color:  #E5E5E5;
+  color: #212121;
+}
+
 .main-part{
   background-color: var(--accent-color);
 }
@@ -216,7 +227,10 @@ text-align: center;
 letter-spacing: 0.03em;
 
 }
-.main-section-button .link:hover,
+.main-section-button .link:hover {cursor: pointer;
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
 .main-section-button .link:focus {
   background-color: var(--brand-color);
   color: var(--accent-color);
