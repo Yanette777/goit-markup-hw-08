@@ -87,9 +87,11 @@ color: var(--brand-color);
 }
 button:hover{cursor: pointer;
 background-color: var(--brand-color);
+color: var(--accent-color);
 }
 button:focus{
 background-color: var(--brand-color);
+color: var(--accent-color);
 }
  
 .work-title {background-color:  #2F303A;
@@ -104,8 +106,8 @@ font-family: Roboto, sans-serif;
 }
 
 .button {background-color: var(--brand-color);
-  color: var(--accent-color);
-  font-weight: bold;
+color: var(--title-text-color)
+font-weight: bold;
 font-size: 16px;
 line-height: 1.87;
 display: flex;
