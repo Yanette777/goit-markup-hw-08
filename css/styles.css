@@ -180,16 +180,17 @@ align-items: center;
 }
 .features {background-color: #E5E5E5;}
 .features-title-list{ list-style: none;
-display: inline;
+display: inline-block;
 }
 
 .section{
 display: inline
 }
 ul li{
-  display:inline;
+  display: inline-block;
   flex-direction: row;
   text-align: center;
+
 }
 .features-title {color: var(--title-text-color);
   font-weight: bold;
@@ -221,7 +222,7 @@ letter-spacing: 0.03em;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  display: inline;
+  align-items: center;
 }
 .option-first-next {
   font-family: Roboto;
@@ -340,7 +341,10 @@ letter-spacing: 0.06em;
 .feauters-main-list{list-style: none;
  width: 370px;
  height: 404px;
- border: 1px solid blue;
+
+}
+.feauters-main-list li {
+  display: inline-block;
 }
 .varieties{
   color: #757575;
