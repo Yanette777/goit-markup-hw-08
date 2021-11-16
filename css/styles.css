@@ -184,13 +184,22 @@ button:focus {
 }
 .features-title-list {
   list-style: none;
-  display: inline-block;
 }
 
 .section {
   display: inline;
 }
-ul  li {
+ul li {
+  display: inline-block;
+  flex-direction: row;
+  text-align: center;
+}
+.feauters ul {
+ display: inline-block;
+ flex-direction: row;
+ text-align: center;
+}
+.section-features{
   display: inline-block;
   flex-direction: row;
   text-align: center;
