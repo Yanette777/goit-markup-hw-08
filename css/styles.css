@@ -13,6 +13,11 @@
   list-style: none;
   height: 80px;
   align-items: center;
+display: inline-block;
+}
+.container{
+  display: inline-block;
+  align-items: center;
 }
 .page-header a ul li {
 display: flexbox;
@@ -27,6 +32,8 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 text-decoration: none;
+margin-left: 120px;
+margin-top: 24px;
 }
 .logo-color{
   color: var(--title-text-color);
@@ -117,6 +124,10 @@ color: var(--accent-color);
 
 .section{
 width: 1200px;
+}
+.section li {
+
+  display: block;
 }
 .work-title-classification {background-color:  #2F303A;
 font-weight: 900;
