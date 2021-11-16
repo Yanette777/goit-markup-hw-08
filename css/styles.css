@@ -11,9 +11,13 @@
 .page-header {background-color: var(--accent-color);
   text-decoration: none;
   list-style: none;
+  height: 80px;
+  align-items: center;
+}
+.page-header a ul li {
+display: flexbox;
 
 }
-
 .logo {
 color: var(--brand-color);
 font-style: normal;
@@ -33,21 +37,21 @@ text-decoration: none;
 .site-nav-list, .auth-nav-list{
 text-decoration: none;
 list-style: none;
-display:flex;
-outline: 1px ;
+
 }
 .site-nav-list-link{
-  align-items: flex-start;
+
 }
-.auth-nav-list-link-current {
-  align-items: flex-end;
+.auth-nav-list {
+  margin-left: 870px;
+ align-items: center;
+}
+.auth-nav-list-link-info{
+
 }
 .site-nav-list li {
-  margin-right: 40px;
-}
-.auth-nav-list li {
-  margin-right: 40px;
-
+ 
+ 
 }
 
 .link-info{
@@ -110,13 +114,7 @@ button:focus{
 background-color: var(--brand-color);
 color: var(--accent-color);
 }
- .container{
-margin-left: auto;
-margin-right: auto;
-width: 1200px;
-align-items: center;
-align-items: stretch;
-}
+
 .section{
 width: 1200px;
 }
@@ -140,10 +138,11 @@ letter-spacing: 0.06em;
 color: var(--accent-color);
 font-family: Roboto, sans-serif;
 text-decoration: none;
-height: 600px;
+height: 350px;
+padding-top: 60px;
+margin-bottom: 20px;
 }
 .work-title a {
-  margin-top: 60px;
   margin-left: 215px;
 }
 .parameters{
@@ -239,7 +238,9 @@ display: inline;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;}
+  letter-spacing: 0.03em;
+
+}
   
 .work-final-end {
   font-family: Roboto, sans-serif;
@@ -250,6 +251,7 @@ display: inline;
   line-height: 1.71;
   letter-spacing: 0.03em;
 color: var(--accent-color);
+
   }
 .work-final-last{
   font-family: Roboto, sans-serif;
@@ -260,6 +262,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin-top: 9px;
 }
   
 /* Styles for Portfolio folder */
