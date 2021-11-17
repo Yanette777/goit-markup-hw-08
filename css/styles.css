@@ -129,7 +129,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.site-nav-list-link-current {
+  color: #2196f3;
+}
 .link {
   color: var(--brand-color);
   font-style: normal;
