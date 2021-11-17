@@ -245,9 +245,22 @@ ul li {
 }
 .section-features{
   display: flex;
-  flex-direction: row;
+flex-wrap: wrap;
   text-align: center;
-
+  flex-direction: column;
+}
+.features-title-list-text{
+  list-style: none;
+  padding-inline: 7px;
+  padding-left: 7px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.features-title-list-text{
+  
+  
 }
 .section li {
   display: inline-block;
@@ -262,8 +275,10 @@ ul li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.features-title-list{
-  
+.features ul li {
+  flex-direction: column;
+}
+ 
 }
 .feauters-idea {
   color: #757575;
@@ -436,6 +451,7 @@ ul li {
  align-items: center;
  justify-content: space-between 1px;
  box-sizing: border-box;
+ 
 }
 
 .feauters-main-list li {
