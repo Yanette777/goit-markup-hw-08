@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,25 +16,29 @@
 </head>
 
 <body class="page-style">
-  <header class="page-header">
-    <nav class="container">
-      <a href="./portfolio.html" class="logo">
-        Web<span class="logo-color">Studio</span>
-      </a>
-      <ul class="site-nav-list">
-        <li><a href="./index.html" class="link-follow">Студия</a></li>
-        <li><a href="" class="link-active">Портфолио</a></li>
-        <li><a href="" class="link-current">Контакты</a></li>
+  <div class="container">
+    <header class="page-header">
+      <nav class="container">
+        <a href="./portfolio.html" class="logo">
+          Web<span class="logo-color">Studio</span>
+        </a>
+        <ul class="site-nav-list">
+          <li><a href="./index.html" class="link-follow">Студия</a></li>
+          <li><a href="" class="link-active">Портфолио</a></li>
+          <li><a href="" class="link-current">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class=" auth-nav-list">
+        <li><a href="" class="link-info-size">info@devstudio.com</a></li>
+        <li><a href="" class="link-info">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-    <ul class=" auth-nav-list">
-      <li><a href="" class="link-info">info@devstudio.com</a></li>
-      <li><a href="" class="link-info">+38 096 111 11 11</a></li>
-    </ul>
 
-  </header>
+    </header>
+  </div>
+
   <main class="main-part">
-    <section>
+    
+    <section class="main-section-size">
       <ul class="main-section-button">
         <li> <button type="button" class="link">Все</button> </li>
         <li> <button type="button" class="button-second">Веб-сайты</button> </li>
@@ -42,7 +46,7 @@
         <li> <button type="button" class="button-second">Дизайн</button> </li>
         <li> <button type="button" class="button-second">Маркетинг</button> </li>
       </ul>
-      <ul>
+      <ul class="feauters-main-list-content">
         <li class="feauters-main-list">
           <img src="./images/images-portfolio/img-1.jpg" alt="Screen" width="370">
           <h2 class="feauters-main">Технокряк</h2>
