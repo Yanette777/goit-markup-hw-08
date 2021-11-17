@@ -249,6 +249,18 @@ flex-wrap: wrap;
   text-align: center;
   flex-direction: column;
 }
+.features-section-container{
+  display: flex;
+  display: inline-block;
+  width: 270px;
+  height: 75px;
+  flex-direction: column;
+  
+}
+.features-section-container li {
+
+}
+
 .features-title-list-text{
   list-style: none;
   padding-inline: 7px;
@@ -258,10 +270,7 @@ flex-wrap: wrap;
   align-items: center;
   
 }
-.features-title-list-text{
-  
-  
-}
+
 .section li {
   display: inline-block;
   flex-direction: row;
