@@ -357,7 +357,10 @@ margin-right: 0;
   background-color: var(--brand-color);
   color: var(--accent-color);
 }
-
+.list-of-buttons{
+  display: flex;
+ align-content: center;
+}
 .button {
   color: var(--accent-color);
   background-color: var(--brand-color);
@@ -396,9 +399,10 @@ margin-right: 0;
   align-items: center;
 }
 .feauters-main-list-content {
+  display: flex;
   align-items: center;
-  justify-content: space-between 1px;
-  box-sizing: border-box;
+  justify-content: space-between;
+ 
 }
 
 .varieties {
