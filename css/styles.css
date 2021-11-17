@@ -388,6 +388,8 @@ margin-right: 0;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .feauters-main-list {
   list-style: none;
