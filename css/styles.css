@@ -419,6 +419,7 @@ margin-right: 0;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: #757575;
 }
 
 .varieties {
