@@ -72,12 +72,11 @@ ul {
 .auth-nav-list-container {
   margin-left: auto;
 }
-.site-nav-list   {
- display: flex;
-align-items: center;
-
+.site-nav-list {
+  display: flex;
+  align-items: center;
 }
-.auth-nav-list{
+.auth-nav-list {
   display: flex;
   align-items: center;
 }
@@ -357,9 +356,9 @@ margin-right: 0;
   background-color: var(--brand-color);
   color: var(--accent-color);
 }
-.list-of-buttons{
+.list-of-buttons {
   display: flex;
- align-content: center;
+  align-content: center;
 }
 .button {
   color: var(--accent-color);
@@ -401,8 +400,8 @@ margin-right: 0;
 .feauters-main-list-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
- 
 }
 
 .varieties {
