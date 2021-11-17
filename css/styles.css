@@ -371,7 +371,7 @@ margin-right: 0;
   letter-spacing: 0.03em;
 }
 
-.button-second {
+.button-second  {
   background-color: #f5f4fa;
   color: var(--title-text-color);
   font-weight: 500;
@@ -381,6 +381,17 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.03em;
   margin-right: 8px;
+}
+.button-link{
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-right: 8px; 
 }
 .feauters-main {
   color: var(--title-text-color);
