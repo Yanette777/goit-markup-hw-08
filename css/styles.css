@@ -380,6 +380,7 @@ margin-right: 0;
   /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
+  margin-right: 8px;
 }
 .feauters-main {
   color: var(--title-text-color);
