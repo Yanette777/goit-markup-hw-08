@@ -130,7 +130,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.link {
+.link  {
   color: var(--brand-color);
   font-style: normal;
   text-decoration: none;
@@ -356,9 +356,10 @@ margin-right: 0;
   background-color: var(--brand-color);
   color: var(--accent-color);
 }
-.list-of-buttons {
+.buttons-list {
   display: flex;
   align-content: center;
+  justify-content: center;
 }
 .button {
   color: var(--accent-color);
