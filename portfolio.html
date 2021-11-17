@@ -14,32 +14,33 @@
   <link rel="stylesheet" href="./css/styles.css">
 
 </head>
-
 <body class="page-style">
-  <div class="container">
     <header class="page-header">
-      <nav class="container">
-        <a href="./portfolio.html" class="logo">
-          Web<span class="logo-color">Studio</span>
-        </a>
-        <ul class="site-nav-list">
-          <li><a href="./index.html" class="link-follow">Студия</a></li>
-          <li><a href="" class="link-active">Портфолио</a></li>
-          <li><a href="" class="link-current">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class=" auth-nav-list">
-        <li><a href="" class="link-info-size">info@devstudio.com</a></li>
-        <li><a href="" class="link-info">+38 096 111 11 11</a></li>
-      </ul>
-
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">
+            Web<span class="logo-color">Studio</span>
+          </a>
+          <ul class="site-nav-list">
+            <li><a href="./index.html" class="link">Студия</a></li>
+            <li><a href="./portfolio.html" class="link-current">Портфолио</a></li>
+            <li><a href="" class="link-current">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="auth-nav-list-container">
+          <ul class="auth-nav-list">
+            <li><a href="" class="link-info-size">info@devstudio.com</a></li>
+            <li><a href="" class="link-info">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-  </div>
 
   <main class="main-part">
-    
-    <section class="main-section-size">
-      <ul class="main-section-button">
+
+    <section class="section">
+      <div class="container">
+      <ul class="list-of-buttons">
         <li> <button type="button" class="link">Все</button> </li>
         <li> <button type="button" class="button-second">Веб-сайты</button> </li>
         <li><button type="button" class="button-second">Приложения</button> </li>
@@ -93,19 +94,23 @@
           <p class="varieties">Приложение</p>
         </li>
       </ul>
+    </div>
     </section>
 
   </main>
-  <footer class="work-title">
+
+  <footer class="work-title section">
+    <div class="container">
     <a href="./index.html" class="work-final">
       Web<span class="logo-color-white">Studio</span>
     </a>
     <address>
-      <a href="./index.html" class="work-final-end">г. Киев, пр-т Леси Украинки, 26</a> <br> <a href=""
-        class="work-final-last">info@example.com</a> <br> <a href="" class="work-final-last">+38 099 111 11 11</a>
+      <p>
+        <a href="./index.html" class="work-final-end">г. Киев, пр-т Леси Украинки, 26</a> <br> <a href=""
+          class="work-final-last">info@example.com</a> <br> <a href="" class="work-final-last">+38 099 111 11 11</a>
+      </p>
     </address>
-
+  </div>
   </footer>
 </body>
-
 </html>
