@@ -422,6 +422,21 @@ margin-right: 0;
   border-bottom: #757575;
 }
 
+
+/* border colours SOLID COLOUR  
+.link-info-size{
+  border: solid #2196F3;
+}
+.hero-title{
+  border: solid #535aad;
+}*/
+
+.active{
+  color: var(--brand-color);
+}
+.non-active{
+  color: #212121;
+}
 .varieties {
   color: #757575;
   font-size: 16px;
