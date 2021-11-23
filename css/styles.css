@@ -217,6 +217,7 @@ button:focus {
 }
 .social-media-icons{
   display: flex;
+ 
 }
 /* section work end */
 
@@ -372,6 +373,8 @@ margin-right: 30px;
 .social-list{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+ 
 }
 .social-list-item{
   margin-right: 10px;
@@ -437,7 +440,21 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   display: block;
   text-transform: uppercase;
-  padding-left: 516px;
+ 
+}
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
+.social-links{
+align-items: flex-end;
+}
+.footer-wrapper{
+  margin-right: 70px;
+}
+
+.work-title .social {
+  font-weight: 700;
 }
 .work-final-last {
   font-style: normal;
