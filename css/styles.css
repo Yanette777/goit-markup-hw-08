@@ -215,7 +215,9 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.social-media-icons{
+  display: flex;
+}
 /* section work end */
 
 .button {
@@ -348,6 +350,34 @@ margin-right: 30px;
 }
 .clients-item:last-child{
   margin-right: 0;
+  
+}
+.clients-link{
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: 1px solid red;
+}
+.social-list{
+  display: flex;
+  justify-content: center;
+}
+.social-list-item{
+  margin-right: 10px;
+}
+.social-list-item:last-child{
+  margin-right: 0px;
 }
 
 .option-first-next {
@@ -369,6 +399,7 @@ margin-right: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .work-final {
