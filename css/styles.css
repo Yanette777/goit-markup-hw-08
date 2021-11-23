@@ -169,14 +169,9 @@ a:hover {
 a:focus {
   color: var(--brand-color);
 }
-button:hover {
-  cursor: pointer;
-  background-color: var(--brand-color);
-  color: var(--accent-color);
-  box-shadow: 2px 0px, 2px rgba(0, 0, 0, 0.12) 2px 0px, 1px rgba(0, 0, 0, 0.08) 1px 0px,
-    3px rgba(0, 0, 0, 0.1);
-}
+button:hover,
 button:focus {
+  cursor: pointer;
   background-color: var(--brand-color);
   color: var(--accent-color);
   box-shadow: 2px 0px, 2px rgba(0, 0, 0, 0.12) 2px 0px, 1px rgba(0, 0, 0, 0.08) 1px 0px,
@@ -190,7 +185,10 @@ button:focus {
   padding-bottom: 200px;
   text-align: center;
   background-image: url(../images/background.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  background-position: center;
 }
 .overlay {
   max-width: 1600px;
@@ -242,18 +240,13 @@ button:focus {
 }
 
 /* section features */
-.features {
-  padding-top: 94px;
-}
-.features-item: :before {
+
+.features-item::before {
   display: block;
   height: 120px;
   background-image: url();
-  
- 
 
   content: '';
-  
 }
 .features-list li {
   box-shadow: 1px 0px, 2px rgba(0, 0, 0, 0.2), 1px 0px, 1px rgba(0, 0, 0, 0.14), 3px 0px,
@@ -338,6 +331,14 @@ button:focus {
 img {
   display: block;
 }
+.clients {
+  border-color: #e5e5e5;
+  text-align: center;
+  color: #212121;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+}
 .option-first-next {
   font-style: normal;
   font-weight: 500;
@@ -383,6 +384,18 @@ img {
 }
 .address {
   margin-top: 20px;
+}
+.social {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  display: block;
+  text-transform: uppercase;
+  padding-left: 516px;
 }
 .work-final-last {
   font-style: normal;
@@ -474,6 +487,18 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+}
+.button-second:hover {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-link:hover {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-link {
   background-color: #f5f4fa;
@@ -485,6 +510,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
 }
 .feauters-main {
   color: var(--title-text-color);
