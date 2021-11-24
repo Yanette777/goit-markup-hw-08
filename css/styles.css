@@ -52,7 +52,6 @@ a {
 .header-nav {
   display: flex;
   align-items: center;
-  
 }
 .header-container a:hover,
 .header-container a:focus
@@ -227,8 +226,7 @@ button:focus {
   
   fill: #fff;
   background: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
- 
+
 }
 .social-list-item{
   border-radius: 50%;
