@@ -54,9 +54,8 @@ a {
   align-items: center;
 }
 .header-container a:hover,
-.header-container a:focus
-{
-color: var(--brand-color);
+.header-container a:focus {
+  color: var(--brand-color);
 }
 .logo {
   color: var(--brand-color);
@@ -223,15 +222,14 @@ button:focus {
 }
 .social-links .social-media-icons {
   display: flex;
-  
   fill: #fff;
   background: rgba(255, 255, 255, 0.1);
-
 }
-.social-list-item{
+
+.social-list-item {
   border-radius: 50%;
 }
-.social-list-item:hover{
+.social-list-item:hover {
   background-color: var(--brand-color);
 }
 .social-links .social-media-icons:hover,
@@ -240,8 +238,8 @@ button:focus {
 }
 .features-list .social-media-icons {
   display: flex;
-  fill: #AFB1B8;
-  
+  fill: #afb1b8;
+
   color: #fff;
 }
 .features-list .social-media-icons:hover,
