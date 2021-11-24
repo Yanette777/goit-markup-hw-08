@@ -229,7 +229,6 @@ border-radius: 50%;
 .social-list-item:hover{
   background-color: var(--brand-color);
 }
-
 .social-links .social-media-icons:hover,
 .social-links .social-media-icons:focus {
   fill: var(--brand-color);
@@ -237,15 +236,14 @@ border-radius: 50%;
 .features-list .social-media-icons {
   display: flex;
   fill: #AFB1B8;
-  background: #FFFFFF;
+  
   color: #fff;
 }
 .features-list .social-media-icons:hover,
 .features-list .social-media-icons:focus {
-  fill: var(--brand-color);
+  fill: white;
+  background-color: var(--brand-color);
 }
-
- /* .social-media-icons{ */
 
 /* .social-media:hover .socia-media-icons, */
 /* .social-media:focus .socia-media-icons { */
