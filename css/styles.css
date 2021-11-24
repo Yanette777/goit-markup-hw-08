@@ -47,10 +47,17 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+  color: #212121;
 }
 .header-nav {
   display: flex;
   align-items: center;
+  
+}
+.header-container a:hover,
+.header-container a:focus
+{
+color: var(--brand-color);
 }
 .logo {
   color: var(--brand-color);
