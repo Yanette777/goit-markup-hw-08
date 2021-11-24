@@ -94,7 +94,6 @@ a {
 }
 .link-current:hover ::after {
   /*   opacity: 1; */
-  
   }
 .link-current {
   padding-top: 32px;
