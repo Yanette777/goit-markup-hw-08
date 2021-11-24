@@ -632,11 +632,13 @@ img {
   flex-wrap: wrap;
   border-bottom: #757575;
 }
-.features-main-list-content {
+.features-main-list {
   box-shadow: #ffffff;
 }
-.feauters-main-list-content:hover {
-  box-shadow: #eeeeee;
+.feauters-main-list:hover,
+.feauters-main-list:focus
+{
+  box-shadow: #615e5e;
 }
 .feauters-main-list-items {
   padding-bottom: 20px;
