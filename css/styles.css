@@ -85,16 +85,17 @@ a {
   display: block;
   width: 100%;
   height: 4px;
-  background-colol: var(--brand-color);
+  background-color: var(--brand-color);
   position: absolute;
   left: 0;
   bottom: 0;
-  display: none;
+  /* opacity: 0; */
+  transition: width 250ms ;
 }
 .link-current:hover ::after {
-  display: block;
+  /*   opacity: 1; */
   
-}
+  }
 .link-current {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -107,6 +108,15 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+}
+.link {
+  color: var(--brand-color);
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .link::after {
   content: '';
@@ -191,15 +201,7 @@ a {
 .site-nav-list-item {
   margin-right: 50px;
 }
-.link {
-  color: var(--brand-color);
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+
 .button {
   background-color: var(--brand-color);
   color: var(--title-text-color);
