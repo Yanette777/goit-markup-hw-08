@@ -152,7 +152,7 @@ a {
 }
 .header-icon {
   margin-right: 10px;
-  color: #757575;
+  fill: #757575;
   transition-property: var(--brand-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -278,6 +278,7 @@ button:focus {
 }
 .social-media {
   fill: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
@@ -729,7 +730,7 @@ img {
 }
 
 .card-holder-shadow:hover,
-.feauters-main-list .card-holder-shadow:focus .feauters-main-list {
+.feauters-main-list  {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -824,21 +825,30 @@ transform: translateY(0);
   padding-bottom: 63px;
   padding-left: 24px;
 }
-
 .backdrop{
   position: fixed;
-  width: 528px;
-  height: 581px;
-background-color: white;
-  top: 15%;
-  left: 28%;
   
+background-color: rgba(0, 0, 0, 0.2);
+top: 221px;
+  left: 536px;
+}
+.backdrop is-hidden {
+
 }
 .modal{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+ width: 528px;
+ height: 581px;
+ box-sizing: border-box;
+ opacity: 1;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  /* transform: translate(-50%, -50%); */
 background-color: #FFFFFF;
 border-radius: 4px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);;
