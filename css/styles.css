@@ -814,4 +814,13 @@ transform: translate(0);
   position: absolute;
   top: 8px;
   right: 8px;
+  color: rgba(0, 0, 0, 1);
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
