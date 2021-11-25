@@ -243,6 +243,9 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.social-list .social-media {
+  fill: white;
+}
 .social-media {
   fill: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
@@ -426,7 +429,7 @@ img {
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-  color: #2196f3;
+  fill: #2196f3;
 }
 .clients-link {
   display: flex;
