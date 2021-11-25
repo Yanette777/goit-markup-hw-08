@@ -729,9 +729,6 @@ img {
   padding-right: 24px;
 }
 
-/* .active {
-  color: var(--brand-color);
-} */
 .non-active {
   color: #212121;
 }
@@ -764,9 +761,7 @@ img {
   flex-direction: column;
   transition-property:  transform ;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* transition:  transfort 250ms cubic-bezier(0.165, 0.84, 0.44, 1), 
-  color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.165, 0.84, 0.44, 1); */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-holder-shadow:hover .image-overlay{
 transform: translate(0);
