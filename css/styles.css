@@ -358,6 +358,9 @@ button:focus {
   padding-bottom: 27px;
   position: absolute;
   width: 370px;
+  bottom: 0;
+  left: 0;
+  
   
   
   /* top: 50%;
@@ -369,6 +372,8 @@ transform: translate(-50%, -50%); */
 }
 .features-title-list {
   margin-right: 30px;
+  position: relative;
+
 }
 .features-title-list:last-child {
   margin-right: 0px;
