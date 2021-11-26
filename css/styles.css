@@ -51,7 +51,7 @@ a {
   display: flex;
   align-items: center;
   color: #212121;
-  transition-property: var(--brand-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -88,6 +88,9 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover {
   color: var(--brand-color);
@@ -126,7 +129,7 @@ a {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
-  transition-property: var(--brand-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -137,7 +140,7 @@ a {
 .header-icon {
   margin-right: 10px;
   fill: #757575;
-  transition-property: var(--brand-color);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -191,10 +194,7 @@ a {
   margin-top: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--brand-color);
-  transition-property: var(--accent-color);
-  transition-property: 2px 0px, 2px rgba(0, 0, 0, 0.12) 2px 0px, 1px rgba(0, 0, 0, 0.08) 1px 0px,
-    3px rgba(0, 0, 0, 0.1);
+  transition-property: box-shadow, color, background-color;
 }
 button:hover,
 button:focus {
@@ -251,8 +251,7 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-  transition-property: var(--accent-color);
+  transition-property: background-color, fill;
 }
 .social-media:hover,
 .social-media:focus {
@@ -416,7 +415,7 @@ img {
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--brand-color);
+  transition-property: fill;
 }
 .clients-icon:hover,
 .clients-icon:focus {
@@ -426,6 +425,9 @@ img {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color, fill;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -597,8 +599,7 @@ img {
   letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--accent-color);
-  transition-property: background-color;
+  transition-property: background-color, color;
 }
 .main-section-button {
   align-items: center;
@@ -647,9 +648,7 @@ img {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-  transition-property: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: background-color, box-shadow;
 }
 .button-second:hover {
   background-color: #2196f3;
@@ -674,9 +673,7 @@ img {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: var(--brand-color);
-  transition-property: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property:  background-color, box-shadow;
 }
 .feauters-main {
   color: var(--title-text-color);
@@ -692,7 +689,7 @@ img {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow;
+  transition-property: box-shadow,  transform;
 }
 .card-holder-shadow:hover ::before {
   transform: translateY(-35px);
@@ -825,12 +822,15 @@ img {
   margin: 0;
   background-color: transparent;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__btn-close {
   display: block;
 }
-.modal-button:hover .btn-close{
-  fill: #2196F3;
+.modal-button:hover .btn-close {
+  fill: #2196f3;
 }
 
 /* styles for madal window */
