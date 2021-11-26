@@ -410,16 +410,58 @@
   <!-- <button data-modal-open>Заказать услугу</button> -->
 
   <div class="backdrop is-hidden" data-modal>
+
     <div class="modal">
       <button class="modal-button" data-modal-close>
-        <svg width="18px" height="18px">
+        <svg class="modal__btn-close" width="18px" height="18px">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
+      <form class="form modal__form">
+        <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="form__label" for="name">
+          Имя
+          <input class="form__input" type="text" id="name">
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-avatar"></use>
+          </svg>
+        </label>
+        <label class="form__label" for="phone">
+          Телефон
+          <input class="form__input" type="tel" name="" id="phone">
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </label>
+        <label class="form__label" for="mail">
+          Почта
+          <input class="form__input" type="mail" id="mail" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </label>
+
+        <label class="form__label form__label--bottom" for="message">
+          Комментарий
+          <textarea class="form__message" name="message" id="message" rows="5" placeholder="Введите текст"></textarea>
+        </label>
+        <div class="agreement form__agreement">
+          <input class="checkbox visually-hidden" type="checkbox" id="checkbox" />
+          <label class="checkbox-input" for="checkbox">
+            <svg class="agreement__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </label>
+          <p class="agreement__text">
+            Соглашаюсь с рассылкой и принимаю          
+          </p>
+          <a class="agreement__link" href="">Условия договора</a>
+        </div>
+        <button class="form__btn" type="submit">Отправить</button>
+      </form>
     </div>
+ 
   </div>
-
-
 
   <script src="./modal.js"></script>
 </body>
