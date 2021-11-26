@@ -251,7 +251,7 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, fill;
+  transition-property: background-color, fill, color;
 }
 .social-media:hover,
 .social-media:focus {
@@ -261,6 +261,10 @@ button:focus {
 .features-list .social-media-icons {
   display: flex;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+
 }
 .social-media:hover .social-media-icons,
 .social-media:focus .social-media-icons {
@@ -603,6 +607,9 @@ img {
 }
 .main-section-button {
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
 }
 .main-section-button .link:hover {
   cursor: pointer;
@@ -618,6 +625,16 @@ img {
   align-content: center;
   justify-content: center;
   margin-bottom: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
+
+
+
+
+
+
+
 }
 .button {
   color: var(--accent-color);
@@ -627,6 +644,11 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
+
+
 }
 .buttons-list-features {
   margin-right: 8px;
@@ -648,7 +670,7 @@ img {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, color;
 }
 .button-second:hover {
   background-color: #2196f3;
@@ -673,7 +695,7 @@ img {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:  background-color, box-shadow;
+  transition-property: background-color, box-shadow, color;
 }
 .feauters-main {
   color: var(--title-text-color);
@@ -689,7 +711,7 @@ img {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow,  transform;
+  transition-property: box-shadow, transform;
 }
 .card-holder-shadow:hover ::before {
   transform: translateY(-35px);
@@ -787,11 +809,15 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
