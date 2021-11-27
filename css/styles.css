@@ -11,6 +11,9 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+}
 ul {
   text-decoration: none;
   list-style: none;
@@ -400,9 +403,7 @@ transform: translate(-50%, -50%); */
   letter-spacing: 0.03em;
   color: #212121;
 }
-img {
-  display: block;
-}
+
 .clients {
   border-color: #e5e5e5;
   text-align: center;
