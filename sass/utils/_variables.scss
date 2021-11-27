@@ -1,0 +1,37 @@
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text color */
+  --main-txt-cl: rgba(33, 33, 33, 1);
+  --secondary-txt-cl: rgba(117, 117, 117, 1);
+  --title-txt-cl: rgba(255, 255, 255, 1);
+  --btn-txt-cl: rgba(255, 255, 255, 1);
+
+  /* colors */
+  --brand-color: #2196f3;
+  --title-text-color: #212121;
+  --accent-color: white;
+
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl:  #F5F4FA;
+  
+  --black-cl: #000000;
+  --grey-cl: #9da4bd;
+ 
+
+  --linear-gradient: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(47, 48, 58, 0.4) 100%
+  );
+  
+    /* others */
+    border-bottom: 1px solid #ececec;
+
+    /* grid setup */
+    --item: 1;
+    --indent: 30px;
+  }
+
+

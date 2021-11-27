@@ -13,15 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-
+<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body class="page">
 
-  <header class="page-header">
-    <div class="container header-container">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo">
+  <header class="header fixed" data-header>
+    <div class="container header__container">
+      <nav class="header__nav">
+        <a href="./index.html" class="header__logo">
           Web<span class="logo-color">Studio</span>
         </a>
         <ul class="site-nav-list">
@@ -53,6 +53,8 @@
     </div>
   </header>
 
+
+  
   <main>
     <section class="hero">
       <div class="container ">
@@ -369,11 +371,11 @@
             11</a>
         </address>
       </div>
-
       <div class=" social-links">
         <h2 class="social">присоединяйтесь</h2>
         <ul class="social-list">
           <li class="social-list-item">
+
             <a href="" class="social-media">
               <svg width="20" height="20" class="social-media-icons">
                 <use href='./images/sprite.svg#icon-instagram'></use>
@@ -453,14 +455,14 @@
             </svg>
           </label>
           <p class="agreement__text">
-            Соглашаюсь с рассылкой и принимаю          
+            Соглашаюсь с рассылкой и принимаю
           </p>
           <a class="agreement__link" href="">Условия договора</a>
         </div>
         <button class="form__btn" type="submit">Отправить</button>
       </form>
     </div>
- 
+
   </div>
 
   <script src="./modal.js"></script>
