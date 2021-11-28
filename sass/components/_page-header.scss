@@ -1,34 +1,40 @@
 .header{
   background-color: var(--accent-color);
   border-bottom: 1px solid #ececec;
+
 &__container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  // display: flex;
+  // align-items: center;
+  // color: #212121;
+  // transition-property: color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-&__logo{
-  color: var(--brand-color);
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-}
-&__nav{
+// .header-container {
+//   display: flex;
+//   align-items: center;
+//   color: #212121;
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+&__nav-list{
   display: flex;
   align-items: center;
-}
-&__list{
-
   display: flex;
   align-items: center;
   margin-left: auto;
+  display: flex;
+ align-items: center;
+  margin-left: auto;
 }
+
 &__list-item{
   display: flex;
   margin-right: 50px;
@@ -52,9 +58,41 @@
     &:hover {
       color: var(--brand-color);
     }
-    .link-current {}
-    .active{}
+    .link-current {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--brand-color);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    
+    }
+  
   }
+
+
+
+&__logo{
+  color: var(--brand-color);
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+}
+&__logo-color {
+  color: var(--title-text-color);
+}
+&__logo-color-white {
+  color: var(--accent-color);
+}
+
+
 
 &__contacts{
   .list-item{
@@ -89,10 +127,4 @@
  
 
 
-.logo-color {
-  color: var(--title-text-color);
-}
-.logo-color-white {
-  color: var(--accent-color);
-}
 
