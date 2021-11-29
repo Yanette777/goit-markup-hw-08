@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,WAAW,EAAE,kBAAkB;EAC/B,eAAe,EAAE,IAAI;EACrB,gBAAgB,EAAE,mBAAmB;EACrC,KAAK,EAAE,OAAO;CACf;;AAED,AAAA,KAAK,CAAC;EACJ,gBAAgB,EAAE,mBAAmB;EACrC,KAAK,EAAE,uBAAuB;EAC9B,WAAW,EAAE,kBAAkB;EAC/B,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "../sass/components/page-style.scss"
+    ],
+    "names": [],
+    "file": "page-style.css"
+}

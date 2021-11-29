@@ -150,7 +150,19 @@
 .agreement__link {
   text-decoration-style: solid;
   color: #2196f3;
+  text-decoration: underline;
 }
+
+.agreement__text{
+
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
 .checkbox-input {
   margin-right: 7px;
   display: flex;

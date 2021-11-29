@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,AAAC,CACV,WAAW,CAAE,kBAAkB,CAC/B,eAAe,CAAE,IAAI,CACrB,gBAAgB,CAAE,mBAAmB,CACrC,KAAK,CAAE,OAAO,CACf,AAED,AAAA,KAAK,AAAC,CACJ,gBAAgB,CAAE,mBAAmB,CACrC,KAAK,CAAE,uBAAuB,CAC9B,WAAW,CAAE,kBAAkB,CAC/B,eAAe,CAAE,IAAI,CACtB",
+    "sources": [
+        "../sass/components/page-style.scss"
+    ],
+    "names": [],
+    "file": "page-style.min.css"
+}

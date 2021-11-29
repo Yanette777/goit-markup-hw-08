@@ -541,6 +541,10 @@ transform: translate(-50%, -50%); */
   letter-spacing: 0.03em;
   display: block;
   text-transform: uppercase;
+
+
+
+  
 }
 .footer-container {
   display: flex;
