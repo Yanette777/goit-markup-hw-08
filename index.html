@@ -410,8 +410,8 @@
         <div class="subscription-box">
           <p class="subscription-text">Подпишитесь на рассылку
           </p>
-          <input class="subscription" type="email" name="email" id="E-mail/>
-          <textarea class=" subscription__email" name="message" id="E-mail " placeholder="E-mail "></textarea>
+          <input type="email" name="E-mail" class="subscription" placeholder="E-mail" />
+
         </div>
 
         <button class="subscription-button" type="submit">Подписаться
@@ -433,7 +433,7 @@
     <div class="modal">
       <button class="modal-button" data-modal-close>
         <svg class="modal__close-btn" width="18px" height="18px">
-          <use class="btn-close-fill" href="./images/sprite.svg#icon-close"></use>
+          <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
       <form class="form modal__form">
@@ -454,7 +454,7 @@
         </label>
         <label class="form__label" for="mail">
           Почта
-          <input class="form__input" type="mail" name="mail" id="mail" />
+          <input type="email" class="form__input" placeholder="" id="mail" name="email"/>
           <svg class="form__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
@@ -465,17 +465,17 @@
           <textarea class="form__message" name="message" id="message" rows="5" placeholder="Введите текст"></textarea>
         </label>
         <div class="agreement form__agreement">
-          <input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
+          <input class="checkbox visually-hidden" type="checkbox" id="checkbox" />
           <label class="checkbox-input" for="checkbox">
-            <svg class="checkbox__icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-check"></use>
+            <svg class="agreement__icon" width="16" height="16">
+              <use class=""  href="./images/icons.svg#icon-check"></use>
             </svg>
-            <p class="checkbox__text">
-              Соглашаюсь с рассылкой и принимаю &nbsp;
-            </p>
-            <a class="checkbox__link" href=""> Условия договора</a>
           </label>
-
+            <p class="agreement__text">
+              Соглашаюсь с рассылкой и принимаю  &nbsp;        
+            </p>
+            <a class="agreement__link" href="">Условия договора</a>
+   
         </div>
         <button class="form__btn" type="submit">Отправить</button>
       </form>
