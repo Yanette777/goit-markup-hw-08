@@ -11,7 +11,7 @@
   padding-right: 15px;
 }
 
-.header__container__nav-list {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,14 +21,27 @@
   margin-left: auto;
 }
 
-.header__container__list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
+.header__nav__logo {
+  color: --brand-color;
+  font-style: normal;
+  font-family: --secondary-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
 }
 
-.header__container__list-item__link {
+.header__nav__logo .logo-color {
+  color: --title-text-color;
+}
+
+.header__nav__logo .logo-color-white {
+  color: --accent-color;
+}
+
+.header__menu__item .link {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
@@ -47,15 +60,15 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__container__list-item__link:last-child {
+.header__menu__item .link:last-child {
   margin-right: 0px;
 }
 
-.header__container__list-item__link:hover {
+.header__menu__item .link:hover {
   color: --brand-color;
 }
 
-.header__container__list-item__link .link-current {
+.header__menu__item .link .link-current {
   content: '';
   display: block;
   width: 100%;
@@ -66,27 +79,7 @@
   bottom: 0;
 }
 
-.header__container__list-item__logo {
-  color: --brand-color;
-  font-style: normal;
-  font-family: --secondary-font;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-}
-
-.header__container__list-item__logo-color {
-  color: --title-text-color;
-}
-
-.header__container__list-item__logo-color-white {
-  color: --accent-color;
-}
-
-.header__container__list-item__contacts .list-item__link-info {
+.header__contacts .list .info {
   color: --grey-cl;
   font-weight: 500;
   font-size: 14px;
@@ -108,7 +101,7 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__container__list-item__contacts .list-item:hover, .header__container__list-item__contacts .list-item:focus {
+.header__contacts .list .info:hover, .header__contacts .list .info:focus {
   color: --brand-color;
 }
 
