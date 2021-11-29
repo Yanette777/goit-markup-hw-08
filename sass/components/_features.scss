@@ -2,7 +2,11 @@
 .features {
   padding-bottom: 0;
 }
-
+.features-list {
+  display: flex;
+  align-items: center;
+  border-color: #ffffff;
+}
 .features-list {
   display: flex;
   align-items: center;

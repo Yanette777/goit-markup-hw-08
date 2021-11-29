@@ -757,7 +757,7 @@ transform: translate(-50%, -50%); */
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
+
   letter-spacing: 0.03em;
 }
 .cover-image {
@@ -852,13 +852,13 @@ transform: translate(-50%, -50%); */
 }
 .modal__btn-close {
   display: block;
-  transition-property: fill;
+   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover .btn-close {
-  fill: #2196f3;
-}
+  color: #2196f3;
+} 
 
 /* styles for madal window */
 .modal:before {

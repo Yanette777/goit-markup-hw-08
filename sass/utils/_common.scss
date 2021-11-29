@@ -1,3 +1,8 @@
+:root {
+  --brand-color: #2196f3;
+  --title-text-color: #212121;
+  --accent-color: white;
+}
 h1,
 h2,
 h3,
@@ -15,6 +20,26 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 a {
+  text-decoration: none;
+}
+
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.page {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
   text-decoration: none;
 }
