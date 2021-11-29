@@ -1,15 +1,5 @@
 
 
-.agreement__text{
-
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #757575;
-}
-
 /* modal window */
 .backdrop {
   position: fixed;
@@ -60,17 +50,16 @@ color: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btn-close {
+.modal__close-close {
   display: block;
    transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .modal__btn-close:hover {
-//   fill: rgba(33, 150, 243, 1);
-//   }
- .modal-button:hover .btn-close {
-color: white;
+
+ .modal-button:hover .close-btn {
+background-color:  white;
+fill: rgba(33, 150, 243, 1);
 } 
 
 /* styles for madal window */
@@ -162,16 +151,24 @@ color: white;
 .form__message:placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+
+
 .agreement {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
-.agreement__link {
+.checkbox__link {
   text-decoration-style: solid;
   color: #2196f3;
   text-decoration: underline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
 }
 .checkbox-input {
   margin-right: 7px;
@@ -191,6 +188,16 @@ color: white;
   border-color: #2196f3;
 }
 
+.checkbox__text{
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  }
+  
 
 
 .form__btn {

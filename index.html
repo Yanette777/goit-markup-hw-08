@@ -427,11 +427,12 @@
 
   <!-- <button data-modal-open>Заказать услугу</button> -->
 
+
   <div class="backdrop is-hidden" data-modal>
 
     <div class="modal">
       <button class="modal-button" data-modal-close>
-        <svg class="modal__btn-close" width="18px" height="18px">
+        <svg class="modal__close-btn" width="18px" height="18px">
           <use class="btn-close-fill" href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
@@ -464,16 +465,17 @@
           <textarea class="form__message" name="message" id="message" rows="5" placeholder="Введите текст"></textarea>
         </label>
         <div class="agreement form__agreement">
-          <input class="checkbox visually-hidden" type="checkbox"  name="checkbox"id="checkbox" />
+          <input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
           <label class="checkbox-input" for="checkbox">
-            <svg class="agreement__icon" width="16" height="16">
+            <svg class="checkbox__icon" width="16" height="16">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
+            <p class="checkbox__text">
+              Соглашаюсь с рассылкой и принимаю &nbsp;
+            </p>
+            <a class="checkbox__link" href=""> Условия договора</a>
           </label>
-          <p class="agreement__text">
-            Соглашаюсь с рассылкой и принимаю &nbsp;
-          </p>
-          <a class="agreement__link" href=""> Условия договора</a>
+
         </div>
         <button class="form__btn" type="submit">Отправить</button>
       </form>
