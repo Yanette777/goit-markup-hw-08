@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -20,11 +20,12 @@
   <!-- section header -->
   <header class="header fixed" data-header>
     <div class="container header__container  ">
-      <a href="./index.html" class="header__logo">
-        Web<span class="logo-color">Studio</span>
-      </a>
+     
       <nav class="nav ">
         <ul class="nav__list">
+          <li class="nav__list-item"> <a href="./index.html" class="header__logo">
+            Web<span class="logo-color">Studio</span>
+          </a></li>
           <li class="nav__list-item"><a href="" class="link  link-current active">Студия</a></li>
           <li class="nav__list-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="nav__list-item"><a href="" class="link">Контакты</a></li>
@@ -51,7 +52,6 @@
       </ul>
     </div>
   </header>
-
 
 
   <main>
@@ -465,6 +465,7 @@
           Комментарий
           <textarea class="form__message" name="message" id="message" rows="5" placeholder="Введите текст"></textarea>
         </label>
+
         <div class="agreement form__agreement">
           <input class="checkbox visually-hidden" type="checkbox" id="checkbox" />
           <label class="checkbox-input" for="checkbox">
@@ -475,7 +476,7 @@
           
             <p class="agreement__text"> <label for="checkbox" id="text-verification">Соглашаюсь с рассылкой и принимаю &nbsp;</label>
             </p>
-            <a href="dd" class="agreement__link" href="">Условия договора</a>
+            <a class="agreement__link" href="">Условия договора</a>
    
         </div>
         <button class="form__btn" type="submit">Отправить</button>

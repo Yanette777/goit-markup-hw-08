@@ -1,0 +1,14 @@
+.header{
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:#ececec;
+  @include mq(mobile-only){
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+.navigation{
+  display: flex;
+  align-items: center;
+}
+}

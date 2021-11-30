@@ -42,8 +42,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, color, background-color;
 }
-button:hover,
-button:focus {
+
+
+// change selector by tag to class selector
+.button:hover,
+.button:focus {
   cursor: pointer;
   background-color: var(--brand-color);
   color: var(--accent-color);
