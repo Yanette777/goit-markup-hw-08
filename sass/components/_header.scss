@@ -87,11 +87,17 @@
 // header button-navigation
 
 .header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
   @include mq(tablet) {
     display: none;
   }
+}
+.header-button .icon-cross {
+  display: none;
 }
 
 }

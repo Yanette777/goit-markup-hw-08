@@ -436,6 +436,11 @@ a {
 }
 
 .nav__list .header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
@@ -444,6 +449,10 @@ a {
   .nav__list .header__button {
     display: none;
   }
+}
+
+.nav__list .header-button .icon-cross {
+  display: none;
 }
 
 .section {
