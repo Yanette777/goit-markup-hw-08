@@ -248,6 +248,16 @@ a {
   color: var(--brand-color);
 }
 
+.contacts__info .contacts-item:hover,
+.contacts__info .contacts-item:focus {
+  border-color: #2196f3;
+}
+
+.contacts__info .contacts-item:hover .clients-icon,
+.contacts__info .contacts-item:focus .clients-icon {
+  fill: #2196f3;
+}
+
 .contacts__icon {
   margin-right: 10px;
   fill: #757575;
@@ -418,7 +428,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.clients {
+.contacts {
   border-color: #e5e5e5;
   text-align: center;
   font-style: normal;
@@ -426,7 +436,7 @@ a {
   line-height: 1.16;
 }
 
-.clients-list {
+.contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,7 +449,7 @@ a {
   margin-top: 50px;
 }
 
-.clients-icon {
+.contacts-icon {
   fill: #afb1b8;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -449,34 +459,15 @@ a {
   transition-property: fill;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.contacts-icon:hover,
+.contacts-icon:focus {
   fill: #2196f3;
 }
 
-.clients-link {
+.contacts-link {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: border-color, fill;
-  transition-property: border-color, fill;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: #2196f3;
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: #2196f3;
-}
-
-.clients-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,20 +479,33 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
 }
 
-.clients-item {
+.contacts-link:hover,
+.contacts-link:focus {
+  border-color: #2196f3;
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: #2196f3;
+}
+
+.contacts-item {
   padding-right: 0;
   padding-left: 0;
-}
-
-.clients-item {
   margin-right: 30px;
   width: 170px;
   height: 92px;
 }
 
-.clients-item:last-child {
+.contacts-item:last-child {
   margin-right: 0;
 }
 

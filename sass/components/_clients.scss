@@ -1,60 +1,56 @@
 
-.clients {
+.contacts {
   border-color: #e5e5e5;
   text-align: center;
-
   font-style: normal;
   font-size: 36px;
   line-height: 1.16;
 }
-.clients-list {
+.contacts-list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
-.clients-icon {
+.contacts-icon {
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
-.clients-icon:hover,
-.clients-icon:focus {
+.contacts-icon:hover,
+.contacts-icon:focus {
   fill: #2196f3;
 }
-.clients-link {
+.contacts-link {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color, fill;
-}
-.clients-link:hover,
-.clients-link:focus {
-  border-color: #2196f3;
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: #2196f3;
-}
-.clients-link {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color, fill;
 }
-.clients-item {
+.contacts-link:hover,
+.contacts-link:focus {
+  border-color: #2196f3;
+}
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: #2196f3;
+}
+
+.contacts-item {
   padding-right: 0;
   padding-left: 0;
-}
-.clients-item {
   margin-right: 30px;
   width: 170px;
   height: 92px;
 }
-.clients-item:last-child {
+.contacts-item:last-child {
   margin-right: 0;
 }
