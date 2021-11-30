@@ -12,3 +12,48 @@
   align-items: center;
 }
 }
+.nav__list {
+  display: none;
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    &-item{
+      margin-right: 30px;
+    }
+    &-item:last-child {
+      margin-right: 0;
+    }
+.link{
+  color: var(--main-txt-cl);
+  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+}
+
+.header__link-current {
+  color: var(--brand-color);
+  text-decoration: none;
+  display: block;
+
+  transition: color var(--animation);
+  &::after {
+    position: relative;
+    display: block;
+    content: "";
+    border: 2px solid;
+    top: 34px;
+    border-radius: 2px;
+    background-color: var(--overlaybcg);
+  }
+}
+
+
+}
