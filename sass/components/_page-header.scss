@@ -91,7 +91,6 @@
     }
   }
 }
-
 .contacts {
   display: flex;
   align-items: center;
@@ -117,17 +116,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .contacts-info:hover,
-    .contacts-info:focus {
-      border-color: #2196f3;
+    &:hover {
+      color: #2196f3;
     }
-    .contacts-info:hover .clients-icon,
-    .contacts-info:focus .clients-icon {
+    &:hover .contacts__icon {
       fill: #2196f3;
     }
-    }
- 
-
   }
 
   &__icon {
@@ -136,8 +130,7 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .link-info:hover .header-icon,
-    .link-info:focus .header-icon {
+    &:hover {
       fill: #2196f3;
     }
   }

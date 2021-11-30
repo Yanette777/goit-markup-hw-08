@@ -244,17 +244,11 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__info:hover, .contacts__info:focus {
-  color: var(--brand-color);
+.contacts__info:hover {
+  color: #2196f3;
 }
 
-.contacts__info .contacts-item:hover,
-.contacts__info .contacts-item:focus {
-  border-color: #2196f3;
-}
-
-.contacts__info .contacts-item:hover .clients-icon,
-.contacts__info .contacts-item:focus .clients-icon {
+.contacts__info:hover .contacts__icon {
   fill: #2196f3;
 }
 
@@ -269,8 +263,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__icon .link-info:hover .header-icon,
-.contacts__icon .link-info:focus .header-icon {
+.contacts__icon:hover {
   fill: #2196f3;
 }
 
@@ -313,7 +306,7 @@ a {
   bottom: 0;
 }
 
-.header-icon {
+.contacts-icon {
   margin-right: 10px;
   fill: #757575;
   -webkit-transition-property: fill;
@@ -324,8 +317,8 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-info:hover .header-icon,
-.link-info:focus .header-icon {
+.contacts-info:hover .contacts-icon,
+.contacts-info:focus .contacts-icon {
   fill: #2196f3;
 }
 
