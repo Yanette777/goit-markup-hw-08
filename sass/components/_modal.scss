@@ -128,6 +128,9 @@
   border-radius: 4px;
   resize: none;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__message:placeholder {
   color: rgba(117, 117, 117, 0.5);
