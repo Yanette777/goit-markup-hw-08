@@ -455,6 +455,10 @@ a {
   display: none;
 }
 
+.nav__list .header-button.is-open .icon-cross {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;

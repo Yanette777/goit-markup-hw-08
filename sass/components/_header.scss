@@ -96,8 +96,12 @@
     display: none;
   }
 }
+// icon-cross icon-menu
 .header-button .icon-cross {
   display: none;
+}
+.header-button.is-open .icon-cross {
+  display: block;
 }
 
 }
