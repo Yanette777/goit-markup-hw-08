@@ -1,6 +1,29 @@
+.main-part{
+  line-height: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttons-list{
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(tablet) {
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  @include mq(desktop){
+  margin-bottom: 50px;}
+}
 
 .buttons-list-features {
-  margin-right: 8px;
+  display: flex;
+  margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+
 }
 .buttons-list-features:last-child {
   margin-right: 0px;
@@ -126,4 +149,5 @@
   padding-top: 63px;
   padding-bottom: 63px;
   padding-left: 24px;
+}
 }
