@@ -1,6 +1,4 @@
 :root {
-  --main-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
   /*font family*/
   --fontbase: "Roboto", sans-serif;
   --fontsecondary: "Raleway";
@@ -284,6 +282,14 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -366,40 +372,40 @@ a {
   letter-spacing: 0.03em;
 }
 
-.basment {
-  background-color: var(--rockcolor);
+.footer {
+  background-color: var(--title-text-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.web-basment {
-  color: var(--bluecolor);
+.web-footer {
+  color: var(--brand-color);
 }
 
-.list-basment {
+.list-footer {
   list-style-type: none;
 }
 
-.list-basment > li:not(:first-child) {
+.list-footer > li:not(:first-child) {
   margin-top: 9px;
 }
 
-.emblema-basment {
+.emblema-footer {
   font-weight: bold;
   font-family: var(--fontsecondary);
   text-decoration: none;
-  color: var(--whitetext);
+  color: var(--accent-color);
   font-size: 26px;
   margin-bottom: 20px;
 }
 
-.emblema-basment:hover,
-.emblema-basment:focus {
-  color: var(--whitetext);
+.emblema-footer:hover,
+.emblema-footer:focus {
+  color: var(--accent-color);
 }
 
-.contacts-basment {
-  color: var(--whitesix);
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -407,8 +413,8 @@ a {
   transition: color var(--animation);
 }
 
-.contacts-basment:hover, .contacts-basment:focus {
-  color: var(--bluecolor);
+.contacts-footer:hover, .contacts-footer:focus {
+  color: var(--brand-color);
 }
 
 .connect {
@@ -522,12 +528,12 @@ a {
 }
 
 .connect-heading {
-  color: var(--whitetext);
+  color: var(--accent-color);
   font-family: var(--fontbase);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -550,20 +556,20 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--colorsocialbg);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
 }
 
 .links-items:hover, .links-items:focus {
-  border-color: var(--bordercclientshover);
-  background-color: var(--bordercclientshover);
+  border-color: var(--brand-color);
+  background-color: var(--brand-color);
 }
 
 .links-items:hover .svg,
 .links-items:focus .svg {
-  fill: var(--whitecolor);
+  fill: var(--accent-color);
 }
 
 @media (min-width: 1280px) {
@@ -583,10 +589,10 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--whitetext);
+  color: var(--accent-color);
   margin-bottom: 20px;
 }
 
@@ -618,15 +624,15 @@ a {
 .emailinput {
   width: 100%;
   height: 50px;
-  background-color: var(--bcgsubscribe);
-  border: 1px solid var(--bordersubscribe);
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 4px 4px var(--shadow8));
-          filter: drop-shadow(0px 4px 4px var(--shadow8));
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   position: relative;
-  color: var(--whitecolor);
+  color: var(--accent-color);
   padding-left: 16px;
   margin-bottom: 20px;
 }
@@ -636,7 +642,7 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 25;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -646,7 +652,7 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 25;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -656,7 +662,7 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 25;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -666,7 +672,7 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 25;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -681,8 +687,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--bluecolor);
-  color: var(--whitetext);
+  background-color: var(--brand-color);
+  color: var(--accent-color);
   font-size: 16px;
   cursor: pointer;
   border: 0cm;
@@ -691,18 +697,25 @@ a {
   width: 200px;
   margin-left: 12px;
   padding: 29px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 
 .subcribe-svg {
   margin-left: 10px;
+  fill: white;
 }
 
 .street {
-  color: var(--whitetext);
+  color: white;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  font-weight: 400;
+  font-weight: normal;
   margin-bottom: 9px;
 }
 
@@ -710,7 +723,7 @@ a {
   display: block;
   height: 20px;
   width: 20px;
-  fill: var(--colorlogoitem);
+  fill: var(--accent-color);
 }
 
 .header {
@@ -1833,8 +1846,15 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work {

@@ -1,39 +1,39 @@
-.basment {
-  background-color: var(--rockcolor);
+.footer {
+  background-color: var(--title-text-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.web-basment {
-  color: var(--bluecolor);
+.web-footer {
+  color: var(--brand-color);
 }
-.list-basment {
+.list-footer {
   list-style-type: none;
 }
-.list-basment > li:not(:first-child) {
+.list-footer > li:not(:first-child) {
   margin-top: 9px;
 }
-.emblema-basment {
+.emblema-footer {
   font-weight: bold;
   font-family: var(--fontsecondary);
   text-decoration: none;
-  color: var(--whitetext);
+  color: var(--accent-color);
   font-size: 26px;
 
   margin-bottom: 20px;
 }
-.emblema-basment:hover,
-.emblema-basment:focus {
-  color: var(--whitetext);
+.emblema-footer:hover,
+.emblema-footer:focus {
+  color: var(--accent-color);
 }
-.contacts-basment {
-  color: var(--whitesix);
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   transition: color var(--animation);
   &:hover,
   &:focus {
-    color: var(--bluecolor);
+    color: var(--brand-color);
   }
 }
 .connect {
@@ -54,14 +54,14 @@
   }
 }
 .connect-street {
-  @include mq(mobile-only){
-  margin-bottom: 60px;}
- 
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
 
   @include mq(desktop) {
     margin-right: 70px;
   }
-  @include mq (desktop){
+  @include mq(desktop) {
     margin-bottom: 0;
   }
 }
@@ -75,15 +75,12 @@
   }
 }
 .basement-wrapper {
-  
   @include mq(tablet) {
     display: flex;
     align-items: baseline;
-    
   }
-  @include mq (notDesktop)
-  {
-  margin-bottom: 60px;
+  @include mq(notDesktop) {
+    margin-bottom: 60px;
   }
 }
 .connect-links {
@@ -98,12 +95,12 @@
 }
 
 .connect-heading {
-  color: var(--whitetext);
+  color: var(--accent-color);
   font-family: var(--fontbase);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -118,18 +115,18 @@
   height: 44px;
   align-items: center;
   justify-content: center;
-  background-color: var(--colorsocialbg);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color var(--animation);
 
   &:hover,
   &:focus {
-    border-color: var(--bordercclientshover);
-    background-color: var(--bordercclientshover);
+    border-color: var(--brand-color);
+    background-color: var(--brand-color);
   }
   &:hover .svg,
   &:focus .svg {
-    fill: var(--whitecolor);
+    fill: var(--accent-color);
   }
 }
 
@@ -146,10 +143,10 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--whitetext);
+  color: var(--accent-color);
   margin-bottom: 20px;
 }
 .subscriber-emeil {
@@ -164,13 +161,13 @@
 .emailinput {
   width: 100%;
   height: 50px;
-  background-color: var(--bcgsubscribe);
-  border: 1px solid var(--bordersubscribe);
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px var(--shadow8));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   position: relative;
-  color: var(--whitecolor);
+  color: var(--accent-color);
   padding-left: 16px;
   margin-bottom: 20px;
 
@@ -179,7 +176,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1, 25;
+    line-height: 1.25;
     letter-spacing: 0.03em;
     text-align: left;
   }
@@ -188,8 +185,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bluecolor);
-  color: var(--whitetext);
+  background-color: var(--brand-color);
+  color: var(--accent-color);
   font-size: 16px;
   cursor: pointer;
   border: 0cm;
@@ -198,21 +195,29 @@
   width: 200px;
   margin-left: 12px;
   padding: 29px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 .subcribe-svg {
   margin-left: 10px;
+  fill: white;
 }
 .street {
-  color: var(--whitetext);
+  color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  font-weight: 400;
+  font-weight: normal;
   margin-bottom: 9px;
+  
 }
 .svg-basement {
   display: block;
   height: 20px;
   width: 20px;
-  fill: var(--colorlogoitem);
+  fill: var(--accent-color);
 }
