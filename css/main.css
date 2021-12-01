@@ -1818,13 +1818,13 @@ a {
   }
 }
 
-.imgproject {
+.image-origin {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.blank {
+.feauters-main-list-content {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -1835,7 +1835,7 @@ a {
   border-top: none;
 }
 
-.projects {
+.feauters-main {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -1846,7 +1846,7 @@ a {
   margin-bottom: 4px;
 }
 
-.paragraph {
+.varieties {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1857,12 +1857,12 @@ a {
   line-height: 24px;
 }
 
-.relative {
+.image-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.buttons-list-button {
+.button-link .button-second {
   line-height: 1.625;
   cursor: pointer;
   background-color: var(--whitecolor);
@@ -1885,7 +1885,7 @@ a {
   transition: background-color var(--animation), color var(--animation), box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
 
-.buttons-list-button:hover, .buttons-list-button:focus {
+.button-link .button-second:hover, .button-link .button-second:focus {
   cursor: pointer;
   background-color: var(--bluecolor);
   color: var(--whitecolor);
