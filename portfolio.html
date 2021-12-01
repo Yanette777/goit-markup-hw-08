@@ -16,20 +16,22 @@
 
 </head>
 
-<body class="page-style">
+<body class="page">
+  <!-- section header -->
+  <header class="header fixed" data-header>
+    <div class="container header__container  ">
 
-  <header class="header   fixed" data-header>
-    <div class="container header__container">
-      <nav class="header__nav">
+      <nav class="nav ">
         <ul class="nav__list">
-           <li class="nav__list-item"> <a href="./portfolio.html" class="header__logo">
-            Web<span class="logo-color">Studio</span>
-          </a></li>
-          <li class="nav__list-item"><a href="./index.html" class="link ">Студия</a></li>
-          <li class="nav__list-item"><a href="./portfolio.html" class="link link-current">Портфолио</a></li>
+          <li class="nav__list-item"> <a href="./portfolio.html" class="header__logo">
+              Web<span class="logo-color">Studio</span>
+            </a></li>
+          <li class="nav__list-item"><a href="./index.html" class="link  link-current active">Студия</a></li>
+          <li class="nav__list-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="nav__list-item"><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
+
       <ul class="contacts">
         <li class="contacts__item">
           <a href="" class="contacts__info">
@@ -48,6 +50,64 @@
           </a>
         </li>
       </ul>
+      <button class="header__button" type="button" class="header-button is-open" data-mobile-menu-open>
+        <svg class="header__button-icon" width="24px" height="24px">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <!-- MODAL MENU "MOBILE CLOSE" -->
+      <div class="modal-menu is-visible" data-mobile-menu>
+        <button class="closemark closemark-menu" data-mobile-menu-close>
+
+          <svg class="svgclose" width="11" height="11">
+            <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="wrapper">
+          <ul class="modal-menu__list">
+            <li class="modal-menu__list-item">
+              <a href="./index.html" class="modal-menu__link">Студия</a>
+            </li>
+            <li class="modal-menu__list-item">
+              <a href="./portfolio.html" class="modal-menu__link modal-menu__link--current">Портфолио</a>
+            </li>
+            <li class="modal-menu__list-item">
+              <a href="" class="modal-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <ul class="modal-menu__contact">
+            <li class="modal-menu__contact-item">
+              <a href="tel:+380961111111" class="modal-menu__contact-link accent">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="modal-menu__contact-item">
+              <a href="mailto:info@devstudio.com" class="modal-menu__contact-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="modal-menu__socials">
+            <li class="modal-menu__social">
+              <a href="" class="modal-menu__social-link">Instagram </a>
+            </li>
+            <li class="modal-menu__social">
+              <a href="" class="modal-menu__social-link">Twitter</a>
+            </li>
+            <li class="modal-menu__social">
+              <a href="" class="modal-menu__social-link">Facebook</a>
+            </li>
+            <li class="modal-menu__social">
+              <a href="" class="modal-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
     </div>
   </header>
 
@@ -224,73 +284,76 @@
 
   </main>
 
-  <footer class="work-title">
-    <div class="container footer-container">
-      <div class="footer-wrapper">
-        <a href="./index.html" class="work-final">
-          Web<span class="logo-color-white">Studio</span>
-        </a>
+  <footer class="footer">
+    <div class="container connect">
+      <div class="basement-wrapper">
+        <div class="connect-street">
 
-        <address class="address">
-          <a href="https://goo.gl/maps/1pn531EFXvXFtHwB6" class="work-final-end">г. Киев, пр-т Леси Украинки, 26</a>
-          <a href="" class="work-final-last">info@example.com</a> <a href="" class="work-final-last">+38 099 111 11
-            11</a>
-        </address>
-      </div>
 
-      <div class=" social-links">
-        <h2 class="social">присоединяйтесь</h2>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a href="" class="social-media">
-              <svg width="20" height="20" class="social-media-icons">
-                <use href='./images/sprite.svg#icon-instagram'></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-media">
-              <svg width="20" height="20" class="social-media-icons">
-                <use href='./images/sprite.svg#icon-twitter'></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-media">
-              <svg width="20" height="20" class="social-media-icons">
-                <use href='./images/sprite.svg#icon-facebook'></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="" class="social-media">
-              <svg width="20" height="20" class="social-media-icons">
-                <use href='./images/sprite.svg#icon-linkedin'></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <form class="subscription-form">
-        <div class="subscription-box">
-          <p class="subscription-text">Подпишитесь на рассылку
-          </p>
-          <label class="subscription-label">
-
-            <input class="subscription" type="email" name="email" id="E-mail/>
-          <textarea class=" subscription__email" name="message" id="E-mail " placeholder="E-mail "></textarea>
-          </label>
+          <a href="index.html" class="emblema-footer"><span class="web-footer">Web</span>Studio</a>
+          <address class="letter">
+            <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="list-footer">
+              <li>
+                <a href="mailto:info@example.com" class="contacts-footer"> info@example.com</a>
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="contacts-footer">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
         </div>
+        <div class="div-links">
+          <h2 class="connect-heading">присоединяйтесь</h2>
+          <ul class="connect-links">
+            <li class="connect-links-items">
+              <a href="instagram" class="links-items">
+                <svg class="svg-basement" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-links-items">
+              <a href="twitter" class="links-items">
+                <svg class="svg-basement" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-links-items">
+              <a href="facebook" class="links-items">
+                <svg class="svg-basement" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-links-items">
+              <a href="linkedin" class="links-items">
+                <svg class="svg-basement" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-        <button class="subscription-button" type="submit">Подписаться
-          <svg class="subscription__icon" width="24" height="24">
-            <use href="./images/icons/icon-send.svg#icon-send"></use>
-          </svg>
-        </button>
-      </form>
+        </div>
+      </div>
+      <div class="subscribe">
+        <form class="form">
+          <p class="subscribep">Подпишитесь на рассылку</p>
+          <div class="subscriber-emeil">
 
+            <input type="email" name="E-mail" class="emailinput" placeholder="E-mail" />
+            <button type="submit" class="subscribe-button">Подписаться
+              <svg class="subcribe-svg" width="24" height="24">
+                <use href="./images/icons/icon-send.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+
   </footer>
 </body>
 
