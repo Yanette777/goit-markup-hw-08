@@ -37,17 +37,8 @@
     }
   }
 }
-
 @mixin fontStyle($fw: 400, $lh: 1.5, $ls: 0.01em) {
   font-weight: $fw;
   line-height: $lh;
   letter-spacing: $ls;
 }
-
-/*  Usage
-  .block {
-      @include mq(mobile) {
-          margin-bottom: 16px;
-      };
-    }
-*/
