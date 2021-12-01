@@ -1,48 +1,42 @@
-.work-title {
+.basment {
+  background-color: var(--rockcolor);
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  color: var(--accent-color);
-  font-family: Roboto, sans-serif;
 }
+.web-basment {
+  color: var(--bluecolor);
+}
+.list-basment {
+  list-style-type: none;
+}
+.list-basment > li:not(:first-child) {
+  margin-top: 9px;
+}
+.emblema-basment {
+  font-weight: bold;
+  font-family: var(--fontsecondary);
+  text-decoration: none;
+  color: var(--whitetext);
+  font-size: 26px;
 
-// // .web-basment {
-//   color: var(--bluecolor);
-// }
-// .list-basment {
-//   list-style-type: none;
-// }
-// .list-basment > li:not(:first-child) {
-//   margin-top: 9px;
-// }
-// .emblema-basment {
-//   font-weight: bold;
-//   font-family: var(--fontsecondary);
-//   text-decoration: none;
-//   color: var(--whitetext);
-//   font-size: 26px;
-
-//   margin-bottom: 20px;
-// }
-// .emblema-basment:hover,
-// .emblema-basment:focus {
-//   color: var(--whitetext);
-// }
-// .contacts-basment {
-//   color: var(--whitesix);
-//   text-decoration: none;
-//   font-style: normal;
-//   font-weight: 400;
-//   transition: color var(--animation);
-//   &:hover,
-//   &:focus {
-//     color: var(--bluecolor);
-//   }
-// }
-
-.footer-container {
+  margin-bottom: 20px;
+}
+.emblema-basment:hover,
+.emblema-basment:focus {
+  color: var(--whitetext);
+}
+.contacts-basment {
+  color: var(--whitesix);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--bluecolor);
+  }
+}
+.connect {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,20 +53,19 @@
     align-items: baseline;
   }
 }
-
-.footer-wrapper {
-  @include mq(mobile-only) {
-    margin-bottom: 60px;
-  }
+.connect-street {
+  @include mq(mobile-only){
+  margin-bottom: 60px;}
+ 
 
   @include mq(desktop) {
     margin-right: 70px;
   }
-  @include mq(desktop) {
+  @include mq (desktop){
     margin-bottom: 0;
   }
 }
-.social-links {
+.div-links {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -81,62 +74,65 @@
     justify-content: center;
   }
 }
-
-.container-wrapper {
+.basement-wrapper {
+  
   @include mq(tablet) {
     display: flex;
     align-items: baseline;
+    
   }
-  @include mq(notDesktop) {
-    margin-bottom: 60px;
+  @include mq (notDesktop)
+  {
+  margin-bottom: 60px;
   }
 }
-.social-links {
+.connect-links {
   display: flex;
 }
-.social-list-item {
+.connect-links-items {
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
-&:last-child {
-  margin-right: 0px;
-}
-.social {
-  color: #ffffff;
+
+.connect-heading {
+  color: var(--whitetext);
+  font-family: var(--fontbase);
   font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.03em;
-  display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
-  // margin top?
-
+}
+.letter {
+  font-style: normal;
   margin-top: 20px;
 }
-
-.social-media {
+.links-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorsocialbg);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--animation);
-}
-&:hover,
-&:focus {
-  border-color: rgba(33, 150, 243, 1);
-  background-color: rgba(33, 150, 243, 1);
-}
-&:hover .svg,
-&:focus .svg {
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--bordercclientshover);
+    background-color: var(--bordercclientshover);
+  }
+  &:hover .svg,
+  &:focus .svg {
+    fill: var(--whitecolor);
+  }
 }
 
-/* subscription */
 .subscribe {
   @include mq(desktop) {
     margin-left: 93px;
@@ -145,19 +141,18 @@
     width: 450px;
   }
 }
-
-.subscription-text {
+.subscribep {
+  font-family: var(--fontbase);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1, 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: var(--whitetext);
   margin-bottom: 20px;
 }
-.subscription-box {
-  flex-direction: column;
+.subscriber-emeil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,55 +161,58 @@
     align-items: baseline;
   }
 }
-
-.subscription {
+.emailinput {
   width: 100%;
   height: 50px;
+  background-color: var(--bcgsubscribe);
+  border: 1px solid var(--bordersubscribe);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px var(--shadow8));
+  border-radius: 4px;
+  position: relative;
+  color: var(--whitecolor);
   padding-left: 16px;
   margin-bottom: 20px;
-  background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  font-size: 16px;
-  line-height: 1.25;
 
   &::placeholder {
+    font-family: var(--fontbase);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1, 25;
     letter-spacing: 0.03em;
     text-align: left;
   }
 }
-
-.subscription-button {
+.subscribe-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: #2196f3;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
+  background-color: var(--bluecolor);
+  color: var(--whitetext);
   font-size: 16px;
   cursor: pointer;
   border: 0cm;
   border-radius: 4px;
+  height: 50px;
+  width: 200px;
   margin-left: 12px;
   padding: 29px 10px;
 }
-
-.subscription__icon {
-  fill: #ffffff;
+.subcribe-svg {
   margin-left: 10px;
+}
+.street {
+  color: var(--whitetext);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+.svg-basement {
+  display: block;
+  height: 20px;
+  width: 20px;
+  fill: var(--colorlogoitem);
 }
