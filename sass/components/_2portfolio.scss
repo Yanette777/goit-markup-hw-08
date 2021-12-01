@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.buttons-list {
+.menu {
   display: flex;
   flex-wrap: wrap;
 
@@ -12,11 +12,10 @@
     justify-content: center;
     margin-bottom: 14px;
   }
-  @include mq(desktop) {
-    margin-bottom: 50px;
-  }
+  @include mq(desktop){
+  margin-bottom: 50px;}
 }
-.buttons-list-features {
+.menu-item {
   display: flex;
   margin-bottom: 15px;
 
@@ -24,7 +23,7 @@
     margin-right: 8px;
   }
 }
-.feauters-main-list-content {
+.listprojects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,7 +35,7 @@
     justify-content: start;
   }
 }
-.feauters-main-list {
+.listprojects-item {
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
@@ -47,30 +46,31 @@
     margin-right: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
-  @include mq(desktop) {
-    flex-basis: calc((100% - 90px) / 3);
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
+    @include mq(desktop) {
+      flex-basis: calc((100% - 90px) / 3);
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
     }
   }
-}
 
-.card-holder-shadow:hover .overlay,
-.card-holder-shadow:focus .overlay {
+.projects-url:hover .overlay,
+.projects-url:focus .overlay {
   transform: translateY(0);
 }
-.card-holder-shadow {
+.projects-url {
   display: block;
   text-decoration: none;
   color: rgb(33, 33, 33);
   transition: box-shadow var(--animation);
   &:hover,
   &:active {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    /* background-color:red; */
+    box-shadow: 0px 1px 1px var(--shadow3), 0px 4px 4px var(--shadow6),
+      1px 4px 6px var(--shadow7);
   }
 }
 .overlay {
@@ -81,44 +81,50 @@
   height: 100%;
   transform: translateY(101%);
   transition: transform 250ms ease;
-  background-color: var(--overlaybcg);
+  background-color: rgba(33, 150, 243, 0.9);
   font-family: var(--fontbase);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--whitetext);
+  color: var(--accent-color);
   display: flex;
   padding: 63px 24px;
   align-items: center;
   transition: transform var(--animation);
 }
-.overlay-text {
+.overlay-text
+{
   @media screen and (max-width: 375px) {
+     
     font-size: 16px;
     line-height: 1.56;
-
+    
+    
     letter-spacing: 0.03em;
-  }
+    
+  
+    }
+  
 }
-.image-origin {
+.imgproject {
   width: 100%;
   height: auto;
   display: block;
 }
-.feauters-main-list-content {
+.blank {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
   padding-right: 24px;
   border-style: solid;
-  border-color: var(--colorofborders);
+  border-color: rgba(238, 238, 238, 1);
   border-width: 1px;
 
   border-top: none;
 }
-.feauters-main {
+.projects {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -128,24 +134,22 @@
   margin-bottom: 4px;
 }
 
-.varieties {
+.paragraph {
   display: flex;
   line-height: 1.7;
   font-weight: 400;
-  color: var(--silvercolor);
+  color: rgba(117, 117, 117, 1);
   font-size: 16px;
   line-height: 24px;
 }
-.image-overlay {
+.relative {
   position: relative;
   overflow: hidden;
 }
-
-
-.button-link .button-second {
+.menu-button {
   line-height: 1.625;
   cursor: pointer;
-  background-color: var(--whitecolor);
+  background-color: var(--accent-color);
   border: 0cm;
   border-radius: 4px;
   font-family: var(--fontbase);
@@ -156,15 +160,17 @@
   align-items: center;
   padding: 6px 22px;
   box-shadow: 0px;
-  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation);
 
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: var(--bluecolor);
-    color: var(--whitecolor);
+    background-color: var(--brand-color);
+    color: var(--accent-color);
     border: 0cm;
-    box-shadow: 0px 3px 1px var(--shadow1), 0px 1px 2px var(--shadow2), 0px 2px 2px var(--shadow3);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
 }
