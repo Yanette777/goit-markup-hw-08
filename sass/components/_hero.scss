@@ -1,31 +1,41 @@
 /* section work start */
 .hero {
+  display: block;
   background-color: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
   background-position: center;
-  margin-right: auto;
-  margin-left: auto;
-  outline: 1px solid #2f303a;
-}
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+  // outline: 1px solid #2f303a;
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  text-align: center;
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+  @include mq(retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background.jpg);
+  }
+  @include mq(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    }
+  }
+  @include mq(desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    }
+  }
 }
 .button {
   background-color: var(--brand-color);
@@ -34,15 +44,14 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   min-width: 200px;
-  margin-top: 30px;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, color, background-color;
 }
-
 
 // change selector by tag to class selector
 .button:hover,
@@ -52,4 +61,22 @@
   color: var(--accent-color);
   box-shadow: 2px 0px, 2px rgba(0, 0, 0, 0.12) 2px 0px, 1px rgba(0, 0, 0, 0.08) 1px 0px,
     3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+  color: var(--accent-color);
+  font-size: 26px;
+  line-height: 1.36;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  max-width: 360px;
+  margin: 0 auto;
+
+  @include mq(desktop) {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }

@@ -1,7 +1,14 @@
 .container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1200px;
+  }
 }
