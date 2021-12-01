@@ -102,20 +102,14 @@
 
     .header__button {
       display: inline-flex;
-      margin: 0;
-      padding: 0;
+      // margin: 0;
+      // padding: 0;
       background-color: transparent;
       border: none;
       @include mq(tablet) {
         display: none;
       }
     }
-    // icon-cross icon-menu
-    .header-button .icon-cross {
-      display: none;
-    }
-    .header-button.is-open .icon-cross {
-      display: block;
-    }
+    
   }
 }
